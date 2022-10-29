@@ -1,0 +1,121 @@
+.mobile-menu__btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 32px;
+  // height: 32px;
+  height: var(--height__header);
+  margin-left: auto;
+
+  background: none;
+
+  &.is-open {
+    justify-content: flex-start;
+  }
+
+  .header.scrolling & {
+    height: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+};
+
+.burger-line {
+  position: absolute;
+
+  width: 100%;
+  height: 3px;
+  margin: 0;
+
+  background-color: currentColor;
+  border-radius: 2px;
+
+  transition-duration: 0.4s;
+  transition-property: height, opacity, transform;
+
+  &:first-child {
+    transform: translateY(8px);
+  }
+
+  &:last-child {
+    transform: translateY(-8px);
+  }
+
+  .mobile-menu__btn.is-open & {
+    &:first-child {
+      transform: rotate(-45deg);
+    }
+
+    &:nth-child(2n) {
+      opacity: 0;
+    }
+
+    &:last-child {
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  display: flex;
+  padding: 32px;
+
+  color: azure;
+  background-color: rgba($color: #000000, $alpha: 0.9);
+  // background-color: rgb(109, 128, 220);
+  overflow-y: scroll;
+  z-index: 1001;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(100%);
+  transition: 
+    transform var(--transition__main),
+    visibility var(--transition__main);
+
+  body.scrolling & {
+    top: 44px;
+  }
+
+  &.is-open {
+    transform: translateX(0);
+    visibility: visible;
+    pointer-events: all;
+  }
+
+  @media screen and (min-width: 768px) {
+    left: 200px;
+  };
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  };
+};
+
+.mobile-menu .nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+};
+
+.mobile-menu .nav__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+
+
+  font-size: 24px;
+  color: rgba($color: #000000, $alpha: 1);
+  background-color: azure;
+  border-radius: var(--border__radius);
+};

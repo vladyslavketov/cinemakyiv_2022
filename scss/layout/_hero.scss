@@ -1,0 +1,95 @@
+.hero.section {
+  min-height: 200px;
+  margin: 0 auto;
+  padding-top: calc(var(--height__header) + 32px);
+
+  background-image: linear-gradient(rgba(33, 33, 33, 0.7), rgba(33, 33, 33, 0.7)), url(../images/hero/hlop__1600.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  @media screen and (min-width: 1200px) {
+    min-height: 400px;
+  }
+}
+
+.hero__container {
+  display: flex;
+  gap: 20px;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    // gap: 20px;
+  }
+}
+
+.hero__title,
+.hero__subtitle,
+.hero__desc {
+  color: var(--color__w);
+  text-align: center;
+}
+
+.hero__title {
+  margin-bottom: 8px;
+
+  font-weight: 700;
+  font-size: 32px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 48px;
+  }
+}
+
+.hero__subtitle {
+  font-size: 24px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 32px;
+  }
+}
+
+.hero__desc {
+  max-width: 604px;
+  margin: 0 auto;
+
+  font-size: 16px;
+  text-align: center;
+
+  &:last-child {
+    margin-top: 12px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 880px;
+
+    font-size: 24px;
+  }
+}
+
+.hero__box {
+  &:first-child {
+    @media screen and (min-width: 768px) {
+      min-width: 400px;
+    };
+
+    @media screen and (min-width: 1200px) {
+      min-width: 480px;
+    };
+  };
+
+  &:last-child {
+    max-width: 100%;
+    min-width: 0;
+    padding: 0 36px;
+
+    @media screen and (min-width: 768px) {
+      padding: 0 20px;
+    };
+
+    @media screen and (min-width: 1200px) {
+      padding: 0;
+    };
+  };
+};

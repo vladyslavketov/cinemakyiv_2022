@@ -1,0 +1,19 @@
+.header__logo {
+  @extend %flex;
+  height: var(--height__header);
+  gap: 4px;
+
+  .header.scrolling & {
+    height: 40px;
+  };
+};
+
+.logo__icon,
+.logo__text {
+  fill: currentColor;
+};
+
+.logo__text {
+  font-weight: 700;
+  font-size: 24px;
+};

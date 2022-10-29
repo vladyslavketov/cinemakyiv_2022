@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кастинг-агентство Cinema Kyiv. Кастинг у реклами, кліпи, кіно, серіали. Cinema Kyiv Agancy</title>
+  <!-- Шрифти -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Nunito:wght@400;600;700;800;900&family=Source+Serif+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./images/favicon/site.webmanifest">
+  <!-- підключення таблиці стилів -->
+  <link rel="stylesheet" href="./css/main.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a class="logo header__logo" href="./index.html">
+        <svg class="logo__icon" width="24" height="24">
+          <use href="./images/icons/icons.svg#logo"></use>
+        </svg>
+        <span class="logo__text">Cinema</span>
+        <span class="logo__text">Kyiv</span>
+      </a>
+      <button class="mobile-menu__btn" type="button" aria-expanded="false" aria-controls="mobile-menu" data-mobile-menu-btn>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#">Чому ми?</a></li>
+          <li class="nav__item"><a class="nav__link" href="#projects">Наші проекти</a></li>
+          <li class="nav__item"><a class="nav__link" href="#benefits">Переваги</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="#">Чому ми?</a></li>
+        <li class="nav__item"><a class="nav__link" href="#projects">Наші проекти</a></li>
+        <li class="nav__item"><a class="nav__link" href="#benefits">Переваги</a></li>
+      </ul>
+    </nav>
+  </div>
+  <main>
+    <!-- секція герой -->
+    <section class="hero section">
+      <div class="hero__container container">
+        <div class="hero__box">
+          <p class="hero__subtitle subtitle">Чому саме</p>
+          <h1 class="hero__title title" lang="en">Cinema Kyiv?</h1>
+          <p class="hero__desc">Кастинг агенство <span lang="en">Cinema Kyiv</span></p>
+          <p class="hero__desc">має 12 річний досвід роботи в проектах різних форматів та напрямків . Наші представництва в Києві , Львові , Одесі та Харкові дають нам можливість виконати завдання будь-якої складності на всій території України.</p>
+          <p class="hero__desc">Сотні відомих Вам проектів створені за участі нашого агенства - ось деякі з них:</p>
+        </div>
+        <div class="hero__box">
+          <ul class="projects-slider">
+            <li class="projects-slider__item">
+              <span>Ціна правди</span>
+              <img class="projects-slider__img" data-lazy="./images/projects/poster/films/project_1.webp" src="./images/projects/poster/films/project_1.webp" alt="project_1" width="420">
+            </li>
+            <li class="projects-slider__item">
+              <span>Креветки в пайетках. Реванш La Revanche Des Crevettes. Pailletées</span>
+              <img class="projects-slider__img" data-lazy="./images/projects/poster/films/project_2.webp" src="./images/projects/poster/films/project_2.webp" alt="project_2" width="420">
+            </li>
+            <li class="projects-slider__item">
+              <span>Пульс</span>
+              <img class="projects-slider__img" data-lazy="./images/projects/poster/films/project_3.webp" src="./images/projects/poster/films/project_3.webp" alt="project_3" width="420">
+            </li>
+            <li class="projects-slider__item">
+              <span>Захар Беркут</span>
+              <img class="projects-slider__img" data-lazy="./images/projects/poster/films/project_4.webp" src="./images/projects/poster/films/project_4.webp" alt="project_4" width="420">
+            </li>
+            <li class="projects-slider__item">
+              <span>Віддана</span>
+              <img class="projects-slider__img" data-lazy="./images/projects/poster/films/project_5.webp" src="./images/projects/poster/films/project_5.webp" alt="project_5" width="420">
+            </li>
+            <li class="projects-slider__item">
+              <span>Незламна</span>
+              <img class="projects-slider__img" data-lazy="./images/projects/poster/films/project_6.webp" src="./images/projects/poster/films/project_6.webp" alt="project_6" width="420">
+            </li>
+           </ul>
+        </div>
+      </div>
+    </section>
+    <!-- секція проекти -->
+    <div class="section-wrap" id="projects">
+      <section class="projects section" >
+      <div class="container">
+        <h2 class="projects__title title">Ми працювали над проектами:</h2>
+        <ul class="projects__filter-list">
+          <li class="projects__filter-item"><button type="button" class="projects__filter-btn" data-filter="films">Фільми</button></li>
+          <li class="projects__filter-item"><button type="button" class="projects__filter-btn" data-filter="serials">Серіали</button></li>
+          <li class="projects__filter-item"><button type="button" class="projects__filter-btn" data-filter="clips">Кліпи</button></li>
+          <li class="projects__filter-item"><button type="button" class="projects__filter-btn current" data-filter="adv">Реклама</button></li>
+        </ul>
+        <ul class="projects__list">
+        </ul>
+        <a class="projects__link" href="#">Усі проекти (пока не активна)</a>
+      </div>
+    </section>
+    </div>
+     <!-- секція переваги -->
+    <div class="section-wrap" id="benefits">
+      <section class="benefits section" >
+        <div class="benefits__container container">
+          <h2 class="benefits__title title">Чому варто звернутись саме до нас?</h2>
+          <ul class="benefits__list list">
+            <li class="benefits__item">
+              <img class="benefits__img" src="./images/benefits/Top-11-recruitment-software.png" alt="Досвід" width="200" height="100">
+              <div class="benefits__desc">
+                <h3 class="benefits__label subtitle">Досвід</h3>
+                <p class="benefits__text">Започатковані ще в 2011 році ми удосконалювали свій досвід і професіоналізм працюючи над повнометражними фільмами, серіалами , рекламами , телепроектами різного формату , розважальними програмами , скетч-шоу , роликами для Ютуб , Тік-ток , фотосесіями та іншими пректами. </p>
+                <p class="benefits__text">В нашому доробку не тільки робота з професійними акторами і акторами аматорами , та амс - ми також маємо базу і співпрацюємо зі спортсменами , артистами цирку , військовими , співаками , музичними колективами , танцорами , акторами розмовного жанру та акторами нестандартної зовнішності . А наша найбільша в Україні база акторів  єтнічних національностей є унікальною  і неперевершеною. Також ми будемо корисні Вам в роботі з тваринами і автомасовкою . </p>
+              </div>
+            </li>
+            <li class="benefits__item">
+              <img class="benefits__img" src="./images/benefits/qualities-of-a-good-employee-featured.png" alt="Досвід" width="200" height="100">
+              <div class="benefits__desc">
+                <h3 class="benefits__label subtitle">Якість</h3>
+                <p class="benefits__text">Якість нашої роботи Ви можете побачити в сотнях проектів участь в яких нам довірили замовники. " Cinema Kyiv " не тільки проводить кастинги і всю технічну підготовку - ми працюємо на майданчику від " почали " і до " знято". Забеспечуємо всю супровідну документацію , працюємо офіційно і прозоро.</p>
+              </div>
+            </li>
+            <li class="benefits__item">
+              <img class="benefits__img" src="./images/benefits/applicant-tracking-system-featured.png" alt="Досвід" width="200" height="100">
+              <div class="benefits__desc">
+                <h3 class="benefits__label subtitle">Швидкість</h3>
+                <p class="benefits__text">Ми як ФЕН, що рухається з гір. Швидкий, але теплий і легкий вітер. Довіртеся нашому професіоналізму і Ваше замовлення буде виконано швидко, вчасно і без втрати для якості</p>
+              </div>
+            </li>
+             <li class="benefits__item">
+              <img class="benefits__img" src="./images/benefits/Top-11-recruitment-software.png" alt="Досвід" width="200" height="100">
+              <div class="benefits__desc">
+                <h3 class="benefits__label subtitle">Команда</h3>
+                <p class="benefits__text">" CINEMA KYIV " - пишається своєю командою. 
+Ми згуртований , великий , дружній колектив професійних кастинг -менеджерів , асс.по акторам , бригадирів амс , режисерів другого плану . Кожен представник " CK " має багаторічний досвід роботи в десятках , а то і сотнях проектів. </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+  <div class="btn-up is-hide"></div>
+  <!-- підключаємо скрипти для роботи з зовнішніми бібліотеками-->
+  <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <!-- підключаємо скрипти Slick slader -->
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/slick-local.js" type="module"></script>
+  <!-- підключаємо скрипти для роботи -->
+  <script src="./js/mobile-menu.js" type="module"></script>
+  <script src="./js/projectsFromLib.js" type="module"></script>
+  <script src="./js/projectsFilter.js" type="module"></script>
+  <script src="./js/scroll.js" type="module"></script>
+</body>
+</html>
