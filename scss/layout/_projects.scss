@@ -72,14 +72,15 @@
   padding: 12px;
 
   font-size: 16px;
-  color: azure;
-  background-color: rgba(109, 128, 220, 0.5);
+  color: white;
+  // background-color: rgba(109, 128, 220, 0.5);
+  background-color: rgba(black, 0.9);
   border-radius: var(--border__radius);
 
   &.current {
-    color: azure;
     background-color: rgb(109, 128, 220);
-  }
+    
+  };
 
   @media screen and (min-width: 768px) {
     min-width: 100px;

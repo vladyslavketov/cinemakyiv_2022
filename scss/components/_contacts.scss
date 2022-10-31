@@ -1,0 +1,52 @@
+// footer contacts
+
+.contacts {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 12px;
+
+  font-size: 20px;
+
+  .mobile-menu & {
+    padding-top: 20px;
+    border-top: 2px solid rgba($color: #fff, $alpha: 0.3);
+  }
+};
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+};
+
+.contacts__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  height: 24px;
+};
+
+.contacts__icon {
+  width: 24px;
+  height: 24px;
+
+  fill: currentColor;
+};
+
+.orline {
+display: flex;
+align-items: center;
+gap: 4px;
+
+font-size: 12px;
+// color: rgba($color: #fff, $alpha: 0.3);
+}
+
+.line {
+  display: block;
+  width: 100%;
+  height: 2px;
+
+  background-color: rgba($color: #fff, $alpha: 0.3);
+};

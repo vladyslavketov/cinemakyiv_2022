@@ -55,18 +55,28 @@
   margin: 0 auto;
 
   font-size: 16px;
+  line-height: 1.5;
   text-align: center;
 
   &:last-child {
     margin-top: 12px;
-  }
+  };
 
   @media screen and (min-width: 1200px) {
     max-width: 880px;
 
     font-size: 24px;
-  }
-}
+  };
+};
+
+.hero__desc .accent {
+  padding: 0 8px;
+
+  color: black;
+
+  border-radius: var(--border__radius);
+  background-color: rgba($color: white, $alpha: 1.0);
+};
 
 .hero__box {
   &:first-child {

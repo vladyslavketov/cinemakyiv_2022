@@ -1,0 +1,40 @@
+.footer {
+  color: white;
+
+  background-color: black;
+};
+
+.footer__container {
+  padding: 24px;
+
+  @media screen and (max-width: 480px) {
+    margin: 0;
+  };
+}
+
+// .footer__box {
+//   width: 300px;
+// };
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  padding: 12px;
+
+  border-top: 1px solid;
+
+  @media screen and (max-width: 480px) {
+    justify-content: center;
+    flex-direction: column;
+  };
+};
+
+.powered {
+  color: rgba($color: #fff, $alpha: 0.7)
+};
+
+.copyright {
+  color: rgba($color: #fff, $alpha: 0.3);
+};

@@ -10,7 +10,7 @@ refs.btnUp.addEventListener('click', onBtnUpClick);
 function onWindowScroll() {
   const windowPageYOffset = window.pageYOffset;
 
-  if (windowPageYOffset > 60) {
+  if (windowPageYOffset > 40) {
     // console.log('windowPageYOffset: ', windowPageYOffset);
     refs.header.classList.add('scrolling');
     refs.body.classList.add('scrolling');
@@ -21,7 +21,7 @@ function onWindowScroll() {
       refs.btnUp.classList.add('is-hide');
     };
 
-  } else if (windowPageYOffset <= 60) {
+  } else if (windowPageYOffset <= 40) {
     refs.header.classList.remove('scrolling');
     refs.body.classList.remove('scrolling');
   };

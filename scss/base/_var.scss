@@ -17,6 +17,7 @@
 
   // shadow
   --shadow__main: 0 0 4px rgb(0 0 0 / 20%);
+  // 0px 5px 20px rgb(0 0 0 / 20%)
 
   // card set
   --items: 1;
@@ -27,9 +28,11 @@
   --border__radius: 20px;
 
   // transition
-  --transition__main: 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition__main: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 };
 
-// #64afd7 / burlywood 
+
+// burlywood
+// #64afd7 
 // rgb(108, 143, 189)
-// rgb(109, 128, 220);
+// rgb(109, 128, 220)
