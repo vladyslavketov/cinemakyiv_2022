@@ -22,6 +22,7 @@
 
 .header .container {
   @extend %flex;
+  justify-content: space-between
 };
 
 .header .nav {
@@ -33,7 +34,7 @@
 .header .nav__list {
   @extend %flex;
   gap: 16px;
-  margin-left: 24px;
+  margin-left: auto;
 
   height: var(--height__header);
 };

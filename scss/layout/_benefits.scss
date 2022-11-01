@@ -14,6 +14,16 @@
 
 .benefits__list {
   @extend %cardSet;
+  gap: 24px;
+
+  @media screen and (min-width:768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  };
+
+  @media screen and (min-width:1200px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  };
 };
 
 .benefits__item {
@@ -21,15 +31,30 @@
 
   display: flex;
   flex-direction: column;
-
+  align-items: center;
   gap: 16px;
   padding: 16px;
 
   background-color: white;
   border-radius: var(--border__radius);
 
+  @media screen and (min-width:768px) and (max-width:1199px){
+    &:first-child {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    };
+
+    &:last-child {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    };
+  };
+
   @media screen and (min-width:1200px) {
-    --items: 2;
+    &:first-child {
+      grid-column-start: 1;
+      grid-column-end: 4;
+    };
   };
 };
 
