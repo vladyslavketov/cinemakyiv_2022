@@ -253,7 +253,7 @@ svg {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 12px;
-  font-size: 20px;
+  font-size: 16px;
 }
 .mobile-menu .contacts {
   padding-top: 20px;
@@ -335,6 +335,10 @@ body.mobile-menu-is-open .header {
   gap: 16px;
   margin-left: 24px;
   height: var(--height__header);
+}
+
+.header.scrolling .nav__list {
+  height: 40px;
 }
 
 .header .nav__link {
@@ -841,7 +845,7 @@ body.mobile-menu-is-open .header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 32px 16px;
+  padding: 28px 16px;
   color: white;
   background-color: rgba(0, 0, 0, 0.9);
   overflow-y: scroll;
@@ -876,7 +880,7 @@ body.scrolling .mobile-menu {
 }
 
 .mobile-menu .nav {
-  padding-bottom: 32px;
+  padding-bottom: 28px;
 }
 
 .mobile-menu .nav__list {

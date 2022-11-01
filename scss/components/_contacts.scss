@@ -5,12 +5,12 @@
   flex-direction: column;
   gap: 12px;
 
-  font-size: 20px;
+  font-size: 16px;
 
   .mobile-menu & {
     padding-top: 20px;
     border-top: 2px solid rgba($color: #fff, $alpha: 0.3);
-  }
+  };
 };
 
 .contacts__list {

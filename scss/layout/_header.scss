@@ -38,6 +38,10 @@
   height: var(--height__header);
 };
 
+.header.scrolling .nav__list {
+  height: 40px;
+};
+
 .header .nav__link {
   font-size: 20px;
   line-height: 1.2;
