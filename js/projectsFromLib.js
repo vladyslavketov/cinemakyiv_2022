@@ -18,14 +18,30 @@ refs.projectList.addEventListener('click', playProjectVideo);
 
 // === funcion ===
 function createlibProjectsMarkup(libProjects) {
+  // let nameOfCategory = 0;
+  console.log(libProjects[1]);
+
   return libProjects
     .map(({ projectName, category }) => {
+      let nameOfCategory = 0;
+      if (category === 'films') {
+        nameOfCategory = "Фільм"
+      } else if (category === 'serials') {
+        nameOfCategory = "Серіал"
+      } else if (category === 'clips') {
+        nameOfCategory = "Кліп"
+      } else if (category === 'adv') {
+        nameOfCategory = "Реклама"
+      };
+    
       return ` 
-        <li class="projects__item" data-filter="${category}">
+        <li class="projects__item hide" data-filter="${category}">
           <img class="projects__img-cover js-coverPlay" src="./images/projects/cover/${category}/${projectName}.webp" alt="${projectName}" width="320" height="280"/>
           <svg class="projects__play-svg" width="60" height="60">
             <use href="./images/icons/icons.svg#play_youtube"></use>
           </svg>
+          <p class="project__title">${projectName}</p>
+          <p class="project__category">${nameOfCategory}</p>
         </li>
       `;
     })
@@ -72,4 +88,8 @@ function playProjectVideo (e) {
     });
 
   instance.show(); 
+};
+
+function getCurrentCategory() {
+  console.log('f');
 };

@@ -2,6 +2,39 @@
   min-width: 0;
 };
 
+.projects__filter-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin: 24px 0;
+};
+
+.projects__filter-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 80px;
+  padding: 12px;
+
+  font-size: 16px;
+  color: white;
+  // background-color: rgba(109, 128, 220, 0.5);
+  background-color: rgba(black, 0.9);
+  border-radius: var(--border__radius);
+
+  &.current {
+    background-color: rgb(109, 128, 220);
+  };
+
+  @media screen and (min-width: 768px) {
+    min-width: 100px;
+  };
+};
+
 .projects__list {
   @extend %cardSet;
 };
@@ -15,8 +48,35 @@
   };
 };
 
+.project__title,
+.project__category {
+  position: absolute;
+  
+  padding: 12px;
+  color: white;
+  font-size: 16px;
+
+  border-bottom-left-radius: var(--border__radius);
+  border-top-right-radius: var(--border__radius);
+  background-color: rgba($color: black, $alpha: 0.5);
+};
+
+.project__title {
+  bottom: 0;
+  left: 0;
+
+  max-width: 90%;
+}
+
+.project__category {
+  top: 0;
+  right: 0;
+}
+
 .projects__img-cover {
   width: 100%;
+  object-fit: cover;
+  max-height: 300px;
 
   border-radius: var(--border__radius);
   cursor: pointer;
@@ -51,50 +111,4 @@
     width: 960px;
     height: 840px;
   }
-};
-
-.projects__filter-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 8px;
-
-  margin: 24px 0;
-};
-
-.projects__filter-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  min-width: 80px;
-  padding: 12px;
-
-  font-size: 16px;
-  color: white;
-  // background-color: rgba(109, 128, 220, 0.5);
-  background-color: rgba(black, 0.9);
-  border-radius: var(--border__radius);
-
-  &.current {
-    background-color: rgb(109, 128, 220);
-    
-  };
-
-  @media screen and (min-width: 768px) {
-    min-width: 100px;
-  };
-};
-
-.projects__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 24px 0 0;
-  padding: 12px;
-
-  font-size: 16px;
-  border-radius: var(--border__radius);
-  background-color: burlywood;
 };

@@ -4,8 +4,6 @@ const refs = {
   menuNavListRef: document.querySelector(".mobile-menu .nav__list"),
 };
 
-// console.log(refs.menuNavListRef);
-
 refs.menuBtnRef.addEventListener("click", toggleClassIsOpen);
 refs.menuNavListRef.addEventListener("click", checkNodeName);
 // window.addEventListener("orientationchange", removeClassIsOpen);
