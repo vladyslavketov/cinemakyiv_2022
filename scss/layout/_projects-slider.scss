@@ -46,4 +46,6 @@
 
 .projects-slider__img {
   border-radius: var(--border__radius);
+
+  object-fit: cover;
 };

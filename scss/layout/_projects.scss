@@ -43,6 +43,8 @@
   position: relative;
   @extend %cardSet__item;
 
+  overflow: hidden;
+
   &.hide {
     display: none;
   };
@@ -52,34 +54,72 @@
 .project__category {
   position: absolute;
   
-  padding: 12px;
-  color: white;
-  font-size: 16px;
+  // padding: 12px;
 
+  // font-size: 16px;
+  color: white;
+
+  overflow: hidden;
+  
   border-bottom-left-radius: var(--border__radius);
   border-top-right-radius: var(--border__radius);
-  background-color: rgba($color: black, $alpha: 0.5);
+  background-color: rgba($color: black, $alpha: 0.85);
 };
 
 .project__title {
   bottom: 0;
   left: 0;
 
-  max-width: 90%;
-}
+  max-width: 94%;
+  padding: 10px;
+
+  // border-bottom-right-radius: var(--border__radius);
+  
+  @media screen and (min-width: 768px) {
+    // padding: 8px;
+    font-size: 16px;
+  };
+  
+  @media screen and (min-width: 1200px) {
+    padding: 12px;
+    font-size: 18px;
+  };
+};
 
 .project__category {
   top: 0;
   right: 0;
-}
+
+  padding: 8px;
+  font-size: 12px;
+
+  // border-top-right-radius: var(--border__radius);
+
+  @media screen and (min-width: 1200px) {
+    padding: 10px;
+    font-size: 14px;
+  };
+};
 
 .projects__img-cover {
   width: 100%;
+  // height: auto;
   object-fit: cover;
-  max-height: 300px;
 
   border-radius: var(--border__radius);
   cursor: pointer;
+
+  @media screen and (min-width: 480px) {
+    height: 252px + 50px;
+  };
+
+  @media screen and (min-width: 768px) {
+    height: 192px  ;
+  };
+
+  @media screen and (min-width: 1200px) {
+    height: 204px + 50px;
+  };
 };
 
 .projects__play-svg {
