@@ -17,17 +17,23 @@
   justify-content: center;
   align-items: center;
 
-  min-width: 80px;
+  min-width: 88px;
   padding: 12px;
 
   font-size: 16px;
-  color: white;
-  // background-color: rgba(109, 128, 220, 0.5);
-  background-color: rgba(black, 0.9);
+  color: rgba(white, 0.6);
+  background-color: rgba(black, 1);
   border-radius: var(--border__radius);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--color__hover);
+  };
 
   &.current {
-    background-color: rgb(109, 128, 220);
+    color: white;
+    background-color: var(--color__accent);
   };
 
   @media screen and (min-width: 768px) {
@@ -37,11 +43,16 @@
 
 .projects__list {
   @extend %cardSet;
+
+  // background-color: var(--color__accent);
 };
 
 .projects__item {
   position: relative;
   @extend %cardSet__item;
+
+  display: flex;
+  flex-direction: column;
 
   overflow: hidden;
 
@@ -50,33 +61,19 @@
   };
 };
 
-.project__title,
-.project__category {
-  position: absolute;
-  
-  // padding: 12px;
-
-  // font-size: 16px;
-  color: white;
-
-  overflow: hidden;
-  
-  border-bottom-left-radius: var(--border__radius);
-  border-top-right-radius: var(--border__radius);
-  background-color: rgba($color: black, $alpha: 0.85);
-};
-
 .project__title {
-  bottom: 0;
-  left: 0;
-
-  max-width: 94%;
+  flex-grow: 1;
+  width: 100%;
   padding: 10px;
 
-  // border-bottom-right-radius: var(--border__radius);
+  color: white;
+
+  border-bottom-left-radius: var(--border__radius);
+  border-bottom-right-radius: var(--border__radius);
+  background-color: black;
+  overflow: hidden;
   
   @media screen and (min-width: 768px) {
-    // padding: 8px;
     font-size: 16px;
   };
   
@@ -87,13 +84,19 @@
 };
 
 .project__category {
+  position: absolute;
   top: 0;
   right: 0;
 
   padding: 8px;
-  font-size: 12px;
 
-  // border-top-right-radius: var(--border__radius);
+  font-size: 12px;
+  color: white;
+  
+  background-color: rgba($color: black, $alpha: 0.85);
+  border-bottom-left-radius: var(--border__radius);
+  border-top-right-radius: var(--border__radius);
+  overflow: hidden;
 
   @media screen and (min-width: 1200px) {
     padding: 10px;
@@ -103,22 +106,23 @@
 
 .projects__img-cover {
   width: 100%;
-  // height: auto;
+  height: calc(50vw);
   object-fit: cover;
 
-  border-radius: var(--border__radius);
+  border-top-left-radius: var(--border__radius);
+  border-top-right-radius: var(--border__radius);
   cursor: pointer;
 
   @media screen and (min-width: 480px) {
-    height: 252px + 50px;
+    height: 252px;
   };
 
   @media screen and (min-width: 768px) {
-    height: 192px  ;
+    height: 192px;
   };
 
   @media screen and (min-width: 1200px) {
-    height: 204px + 50px;
+    height: 204px;
   };
 };
 
@@ -131,7 +135,7 @@
   width: 60px;
   height: 60px;
 
-  color: red;
+  color: #FF0000;
   fill: currentColor;
   transform: translate(-50%, -50%);
 
@@ -145,10 +149,10 @@
   @media screen and (min-width: 768px) {
     width: 720px;
     height: 405px;
-  }
+  };
 
   @media screen and (min-width: 1200px) {
     width: 960px;
     height: 840px;
-  }
+  };
 };

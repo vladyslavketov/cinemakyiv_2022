@@ -9,6 +9,9 @@
   --color__main: #1d2a3b;
   --color__secondary: #495c77;
   --color__w: #fff;
+  --color__accent: #684ab8;
+  --color__hover: rgba(104, 74, 184, 0.75);
+  // --color__hover2: rgba(104, 74, 184, 1);
 
   // colors bg
   --color-bg__main: #f0faff;
@@ -26,14 +29,17 @@
 
   // sizes
   --height__header: 60px;
-  --border__radius: 20px;
+  --border__radius: 4px;
 
   // transition
   --transition__main: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition__hover: 400ms cubic-bezier(0.4, 0, 0.2, 1);
 };
 
-
+// #b3a4ff
 // burlywood
+// #684ab8
 // #64afd7 
 // rgb(108, 143, 189)
 // rgb(109, 128, 220)
+// rgb(213, 227, 255)

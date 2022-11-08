@@ -11,9 +11,17 @@ body {
 
   font-family: var(--font-f__main);
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--color__main);
+  
+  // @media screen and (min-width: 768px) {
+  //   font-size: 16px;
+  // };
+  
+  // @media screen and (min-width: 1200px) {
+  //   font-size: 16px;
+  // };
 };
 
 body.mobile-menu-is-open {
@@ -59,6 +67,7 @@ svg {
 .title {
   font-size: 28px;
   text-align: center;
+  line-height: 1;
 };
 
 .subtitle {

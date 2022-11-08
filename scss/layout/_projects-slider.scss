@@ -3,6 +3,10 @@
   min-width: 0px;
 };
 
+.slick-slider.projects-slider {
+  position: relative;
+};
+
 .slick-list {
   overflow: hidden;
   max-width: 100%;
@@ -34,6 +38,32 @@
   background-color: transparent;
   border: 1px solid #fff;
 };
+
+//  стрілки
+.slick-arrow {
+  position: absolute;
+  top: 88%;
+  
+  font-size: 0px;
+  color: #fff;
+  background-color: transparent;
+
+  &.slick-prev {
+    transform: rotate(-90deg);
+    left: 0;
+  };
+
+  &.slick-next {
+    transform: rotate(90deg);
+    right: 0;
+  };
+};
+
+.slick-arrow__icon {
+  fill: currentColor;
+};
+
+
 
 .projects-slider__item {
   display: flex;

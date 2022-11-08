@@ -1,14 +1,14 @@
 .btn-up {
   position: fixed;
-  bottom: 36px;
-  right: 36px;
+  bottom: 24px;
+  right: 24px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  width: 60px;
-  height: 60px;
+  width: 48px;
+  height: 48px;
 
   color: white;
   background-color: rgba($color: black, $alpha: 0.6);
@@ -19,14 +19,10 @@
   opacity: 1;
   pointer-events: all;
 
-  // &::before {
-  //   content: '\2191';
-  //   // content: '\21E7';
-
-  //   color: currentColor;
-  //   font-size: 24px;
-  //   font-weight: 700;
-  // };
+  &:hover,
+  &:focus {
+    background-color: var(--color__accent);
+  };
 
   &.is-hide {
     opacity: 0;
@@ -35,7 +31,7 @@
 };
 
 .btn-up__icon {
-  width: 20px;
-  height: 20px;
+  width: 36px;
+  height: 36px;
   fill: currentColor;
-}
+};

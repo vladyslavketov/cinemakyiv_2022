@@ -7,11 +7,11 @@ $(document).ready(function(){
     easing: 'easy',
     autoplay: true,
     autoplaySpeed: 1500,
+    waitForAnimate: false,
     responsive: [
       {
         breakpoint: 768,
         settings: {
-
         }
       }
     ],

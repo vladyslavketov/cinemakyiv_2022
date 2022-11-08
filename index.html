@@ -24,6 +24,7 @@
       <a class="logo header__logo" href="./index.html">
         <svg class="logo__icon" width="24" height="24">
           <use href="./images/icons/icons.svg#logo"></use>
+          <!-- <use href="./images/icons/icons.svg#circle-chevron-up-solid"></use> -->
         </svg>
         <span class="logo__text">Cinema</span>
         <span class="logo__text">Kyiv</span>
@@ -52,21 +53,27 @@
     </nav>
     <div class="contacts">
       <strong class="contacts__cta">Зателефонуйте нам</strong>
-      <a class="contacts__link" href="tel:+380983963158">
-        <svg class="contacts__icon whatsapp" width="16" height="16">
-            <use href="./images/icons/icons.svg#phone-solid"></use>
-        </svg>
-        +38 098 396 31 58
-      </a>
-      <a class="contacts__link" href="tel:+380965789277">
-        <svg class="contacts__icon whatsapp" width="16" height="16">
-            <use href="./images/icons/icons.svg#phone-solid"></use>
-        </svg>
-        +38 096 578 92 77
-      </a>
+      <ul class="contacts__list">    
+        <li class="contacts__item--call">
+          <a class="contacts__link" href="tel:+380983963158">
+            <svg class="contacts__icon" width="16" height="16">
+              <use href="./images/icons/icons.svg#phone-solid"></use>
+            </svg>
+            +38 (098) 396 31 58
+          </a>
+        </li>
+        <li class="contacts__item--call">
+          <a class="contacts__link" href="tel:+380965789277">
+            <svg class="contacts__icon" width="16" height="16">
+              <use href="./images/icons/icons.svg#phone-solid"></use>
+            </svg>
+          +38 (096) 578 92 77
+          </a>
+        </li>
+      </ul>
       <p class="orline"><span class="line"></span>або<span class="line"></span></p>
       <strong class="contacts__cta">Напишіть нам</strong>
-      <ul class="contacts__list">
+      <ul class="contacts__list contacts__list--message">
         <li class="contacts__item">
           <a class="contacts__link" href="mailto:cinemakyiv@gmail.com" target="_blank">
             <svg class="contacts__icon email" width="16" height="16">
@@ -76,27 +83,27 @@
           </a>
         </li>
         <li class="contacts__item">
-          <a href="https://t.me/IgorKozakCinema" class="contacts__link" target="_blank">
-            <svg class="contacts__icon telegram" width="16" height="16">
+          <a href="https://t.me/IgorKozakCinema" class="contacts__link telegram" target="_blank">
+            <svg class="contacts__icon contacts__icon--message telegram" width="16" height="16">
               <use href="./images/icons/icons.svg#telegram"></use>
             </svg>
-            telegram
+            
           </a>
         </li>
         <li class="contacts__item">
-          <a href="viber://chat?number=380983963158" class="contacts__link" target="_blank">
-            <svg class="contacts__icon viber" width="16" height="16">
+          <a href="viber://chat?number=380983963158" class="contacts__link viber" target="_blank">
+            <svg class="contacts__icon contacts__icon--message viber" width="16" height="16">
               <use href="./images/icons/icons.svg#viber"></use>
             </svg>
-            viber
+            
           </a>
         </li>
         <li class="contacts__item">
-          <a href="https://wa.me/380983963158" class="contacts__link" target="_blank">
-            <svg class="contacts__icon whatsapp" width="16" height="16">
-              <use href="./images/icons/icons.svg#whatsapp2"></use>
+          <a href="https://wa.me/380983963158" class="contacts__link whatsapp" target="_blank">
+            <svg class="contacts__icon contacts__icon--message whatsapp" width="16" height="16">
+              <use href="./images/icons/icons.svg#whatsapp"></use>
             </svg>
-            whatsapp
+            
           </a>
         </li>
       </ul>
@@ -109,12 +116,12 @@
         <div class="hero__box">
           <p class="hero__subtitle subtitle">Чому саме</p>
           <h1 class="hero__title title" lang="en">Cinema Kyiv?</h1>
-          <p class="hero__desc">Кастинг агенство <span lang="en">Cinema Kyiv</span></p>
-          <p class="hero__desc">має <span class="accent">12 річний досвід</span> роботи в проектах різних форматів та напрямків . Наші представництва в Києві , Львові , Одесі та Харкові дають нам можливість виконати завдання будь-якої складності </p>
-          <p class="hero__desc"><span class="accent">на всій території України.</span></p>
-          <p class="hero__desc"><span class="accent">Сотні відомих</span> Вам <span class="accent">проектів</span> створені за участі нашого агенства - ось деякі з них:</p>
+          <p class="hero__desc"><span class="accent">1. Сотні відомих проектів</span> які Ви бачили, створені за участі нашого агенства.</p>
+          <p class="hero__desc hide-mobile"><span class="accent">2. Маємо 12 річний досвід</span> роботи в проектах різних форматів та напрямків.</p>
+          <p class="hero__desc hide-mobile"><span class="accent">3. Наші представництва</span> в Києві, Львові, Одесі та Харкові дають нам можливість виконати завдання будь-якої складності</p>
+          <p class="hero__desc hide-mobile"><span class="accent">на всій території України.</span></p>
         </div>
-        <div class="hero__box">
+        <div class="hero__box slider">
           <ul class="projects-slider">
             <li class="projects-slider__item">
               <span>Ціна правди</span>
@@ -174,13 +181,18 @@
             </li>
            </ul>
         </div>
+        <div class="hero__box hide-tablet">
+          <p class="hero__desc"><span class="accent">2. Маємо 12 річний досвід</span> роботи в проектах різних форматів та напрямків.</p>
+          <p class="hero__desc"><span class="accent">3. Наші представництва</span> в Києві, Львові, Одесі та Харкові дають нам можливість виконати завдання будь-якої складності</p>
+          <p class="hero__desc"><span class="accent">на всій території України.</span></p>
+        </div>
       </div>
     </section>
     <!-- секція проекти -->
     <div class="section-wrap" id="projects">
       <section class="projects section" >
       <div class="container">
-        <h2 class="projects__title title">Ми працювали над проектами:</h2>
+        <h2 class="projects__title title">Проекти над якими ми працювали</h2>
         <ul class="projects__filter-list">
           <li class="projects__filter-item current"><button type="button" class="projects__filter-btn current" data-filter="films">Фільми</button></li>
           <li class="projects__filter-item"><button type="button" class="projects__filter-btn" data-filter="serials">Серіали</button></li>
@@ -234,23 +246,30 @@
   </main>
   <footer class="footer">
     <div class="footer__container container">
-      <div class="footer__box contacts">
+      <div class="footer-box contacts">
+        <h2 class="footer-box__title">Контакти</h2>
         <strong class="contacts__cta">Зателефонуйте нам</strong>
-        <a class="contacts__link" href="tel:+380983963158">
-          <svg class="contacts__icon whatsapp" width="16" height="16">
-              <use href="./images/icons/icons.svg#phone-solid"></use>
-          </svg>
-          +38 098 396 31 58
-        </a>
-        <a class="contacts__link" href="tel:+380965789277">
-          <svg class="contacts__icon whatsapp" width="16" height="16">
-              <use href="./images/icons/icons.svg#phone-solid"></use>
-          </svg>
-          +38 096 578 92 77
-        </a>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380983963158">
+              <svg class="contacts__icon whatsapp" width="16" height="16">
+                <use href="./images/icons/icons.svg#phone-solid"></use>
+              </svg>
+              +38 (098) 396 31 58
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380965789277">
+              <svg class="contacts__icon whatsapp" width="16" height="16">
+                <use href="./images/icons/icons.svg#phone-solid"></use>
+              </svg>
+              +38 (096) 578 92 77
+            </a>
+          </li>
+        </ul>
         <p class="orline"><span class="line"></span>або<span class="line"></span></p>
         <strong class="contacts__cta">Напишіть нам</strong>
-        <ul class="contacts__list">
+        <ul class="contacts__list contacts__list--message">
           <li class="contacts__item">
             <a class="contacts__link" href="mailto:cinemakyiv@gmail.com" target="_blank">
               <svg class="contacts__icon email" width="16" height="16">
@@ -260,56 +279,27 @@
             </a>
           </li>
           <li class="contacts__item">
-            <a href="https://t.me/IgorKozakCinema" class="contacts__link" target="_blank">
-              <svg class="contacts__icon telegram" width="16" height="16">
+            <a href="https://t.me/IgorKozakCinema" class="contacts__link telegram" target="_blank">
+              <svg class="contacts__icon contacts__icon--message telegram" width="16" height="16">
                 <use href="./images/icons/icons.svg#telegram"></use>
               </svg>
-              telegram
             </a>
           </li>
           <li class="contacts__item">
-            <a href="viber://chat?number=380983963158" class="contacts__link" target="_blank">
-              <svg class="contacts__icon viber" width="16" height="16">
+            <a href="viber://chat?number=380983963158" class="contacts__link viber" target="_blank">
+              <svg class="contacts__icon contacts__icon--message viber" width="16" height="16">
                 <use href="./images/icons/icons.svg#viber"></use>
               </svg>
-              viber
             </a>
           </li>
           <li class="contacts__item">
-            <a href="https://wa.me/380983963158" class="contacts__link" target="_blank">
-              <svg class="contacts__icon whatsapp" width="16" height="16">
-                <use href="./images/icons/icons.svg#whatsapp2"></use>
+            <a href="https://wa.me/380983963158" class="contacts__link whatsapp" target="_blank">
+              <svg class="contacts__icon contacts__icon--message whatsapp" width="16" height="16">
+                <use href="./images/icons/icons.svg#whatsapp"></use>
               </svg>
-              whatsapp
             </a>
           </li>
         </ul>
-      </div>
-      <div class="footer__box hide">
-        <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M7.5 8.25V5.25C7.5 4.422 8.172 3.75 9 3.75H10.5V0H7.5C5.0145 0 3 2.0145 3 4.5V8.25H0V12H3V24H7.5V12H10.5L12 8.25H7.5Z" fill="white"></path>
-        </svg>
-        <svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M22.7747 3.37619C22.5154 2.41228 21.7554 1.65244 20.7916 1.39288C19.0309 0.911133 11.988 0.911133 11.988 0.911133C11.988 0.911133 4.94536 0.911133 3.18466 1.37462C2.23943 1.6339 1.46091 2.41241 1.20163 3.37619C0.738281 5.13675 0.738281 8.78792 0.738281 8.78792C0.738281 8.78792 0.738281 12.4575 1.20163 14.1996C1.46118 15.1634 2.22089 15.9233 3.1848 16.1828C4.9639 16.6647 11.9883 16.6647 11.9883 16.6647C11.9883 16.6647 19.0309 16.6647 20.7916 16.2012C21.7555 15.9418 22.5154 15.182 22.7749 14.2182C23.2381 12.4575 23.2381 8.80646 23.2381 8.80646C23.2381 8.80646 23.2567 5.13675 22.7747 3.37619ZM9.7457 12.161V5.41484L15.6022 8.78792L9.7457 12.161Z" fill="white"></path>
-        </svg>
-        <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M9.41718 13.1809L9.02018 18.7649C9.58818 18.7649 9.83418 18.5209 10.1292 18.2279L12.7922 15.6829L18.3102 19.7239C19.3222 20.2879 20.0352 19.9909 20.3082 18.7929L23.9302 1.82092L23.9312 1.81992C24.2522 0.323917 23.3902 -0.261083 22.4042 0.105917L1.11418 8.25692C-0.338822 8.82092 -0.316822 9.63092 0.867178 9.99792L6.31018 11.6909L18.9532 3.77992C19.5482 3.38592 20.0892 3.60392 19.6442 3.99792L9.41718 13.1809Z" fill="white"></path>
-        </svg>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0)">
-            <path d="M23.9763 7.05607C23.9201 5.78085 23.7139 4.90416 23.4185 4.14449C23.1137 3.33812 22.6449 2.61617 22.0306 2.01602C21.4305 1.40652 20.7038 0.932921 19.9068 0.632936C19.1427 0.337529 18.2706 0.131312 16.9954 0.0750879C15.7106 0.0141019 15.3028 0 12.0443 0C8.78588 0 8.37803 0.0141019 7.09805 0.0703262C5.82284 0.126551 4.94615 0.332951 4.18666 0.628174C3.38011 0.932922 2.65816 1.40176 2.05801 2.01602C1.44852 2.61617 0.975096 3.34288 0.674928 4.13991C0.379521 4.90416 0.173304 5.77609 0.11708 7.0513C0.056094 8.33604 0.0419922 8.7439 0.0419922 12.0023C0.0419922 15.2608 0.056094 15.6686 0.112318 16.9486C0.168543 18.2238 0.374943 19.1005 0.670349 19.8602C0.975096 20.6666 1.44852 21.3885 2.05801 21.9887C2.65816 22.5982 3.38487 23.0718 4.1819 23.3718C4.94615 23.6672 5.81808 23.8734 7.09347 23.9296C8.37327 23.986 8.7813 23.9999 12.0398 23.9999C15.2982 23.9999 15.7061 23.986 16.986 23.9296C18.2612 23.8734 19.1379 23.6672 19.8974 23.3718C21.5103 22.7482 22.7856 21.4729 23.4092 19.8602C23.7044 19.096 23.9108 18.2238 23.967 16.9486C24.0232 15.6686 24.0373 15.2608 24.0373 12.0023C24.0373 8.7439 24.0326 8.33604 23.9763 7.05607ZM21.8151 16.8549C21.7634 18.027 21.5666 18.6599 21.4025 19.0819C20.9992 20.1274 20.1694 20.9572 19.1238 21.3605C18.7019 21.5246 18.0644 21.7215 16.8968 21.7729C15.631 21.8293 15.2513 21.8433 12.0491 21.8433C8.84687 21.8433 8.46245 21.8293 7.20116 21.7729C6.02906 21.7215 5.39612 21.5246 4.97417 21.3605C4.45386 21.1682 3.98026 20.8634 3.59585 20.4649C3.19733 20.0758 2.89258 19.6069 2.70029 19.0866C2.53619 18.6647 2.33931 18.027 2.28785 16.8596C2.23144 15.5937 2.21753 15.2139 2.21753 12.0117C2.21753 8.80946 2.23144 8.42505 2.28785 7.16394C2.33931 5.99183 2.53619 5.3589 2.70029 4.93694C2.89258 4.41645 3.19733 3.94303 3.60061 3.55843C3.9896 3.15992 4.45844 2.85517 4.97893 2.66306C5.40088 2.49896 6.03858 2.30209 7.20592 2.25044C8.4718 2.19422 8.85163 2.18011 12.0537 2.18011C15.2607 2.18011 15.6403 2.19422 16.9016 2.25044C18.0737 2.30209 18.7066 2.49896 19.1286 2.66306C19.6489 2.85517 20.1225 3.15992 20.5069 3.55843C20.9054 3.94761 21.2102 4.41645 21.4025 4.93694C21.5666 5.3589 21.7634 5.99641 21.8151 7.16394C21.8713 8.42981 21.8854 8.80946 21.8854 12.0117C21.8854 15.2139 21.8713 15.589 21.8151 16.8549Z" fill="white"></path>
-            <path d="M12.0442 5.83691C8.64049 5.83691 5.87891 8.59832 5.87891 12.0022C5.87891 15.406 8.64049 18.1674 12.0442 18.1674C15.448 18.1674 18.2094 15.406 18.2094 12.0022C18.2094 8.59832 15.448 5.83691 12.0442 5.83691ZM12.0442 16.0014C9.83604 16.0014 8.04492 14.2105 8.04492 12.0022C8.04492 9.79386 9.83604 8.00293 12.0442 8.00293C14.2525 8.00293 16.0434 9.79386 16.0434 12.0022C16.0434 14.2105 14.2525 16.0014 12.0442 16.0014Z" fill="white"></path>
-            <path d="M19.8925 5.5936C19.8925 6.38844 19.248 7.03291 18.453 7.03291C17.6581 7.03291 17.0137 6.38844 17.0137 5.5936C17.0137 4.79859 17.6581 4.1543 18.453 4.1543C19.248 4.1543 19.8925 4.79859 19.8925 5.5936Z" fill="white"></path>
-          </g>
-          <defs>
-            <clipPath id="clip0">
-              <rect width="24" height="24" fill="white"></rect>
-            </clipPath>
-          </defs>
-        </svg>
-        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20.9311 6.0255C20.7666 5.9404 20.6064 5.84712 20.4512 5.746C20.0002 5.44778 19.5866 5.09643 19.2195 4.6995C18.2997 3.64758 17.9563 2.5805 17.8306 1.83408H17.835C17.7299 1.21333 17.7732 0.8125 17.7808 0.8125H13.5937V17.0008C13.5937 17.2174 13.5937 17.433 13.5851 17.6453C13.5851 17.6713 13.5818 17.6952 13.5807 17.7244C13.5807 17.7353 13.5807 17.7482 13.5775 17.7602V17.7699C13.5335 18.3506 13.3475 18.9116 13.0358 19.4035C12.7241 19.8954 12.2963 20.3032 11.79 20.5909C11.2618 20.8914 10.6643 21.049 10.0566 21.0481C8.10664 21.0481 6.52498 19.4578 6.52498 17.4937C6.52498 15.5285 8.10664 13.9382 10.0566 13.9382C10.4261 13.9382 10.7933 13.9967 11.1443 14.1115L11.1497 9.8475C10.0837 9.70997 9.00082 9.79492 7.96932 10.097C6.93782 10.3991 5.98014 10.9117 5.15673 11.6025C4.43507 12.2293 3.82833 12.9771 3.36381 13.8125C3.18723 14.1169 2.51989 15.3422 2.43973 17.329C2.38881 18.4557 2.72789 19.6257 2.88931 20.1078V20.1186C2.99006 20.4024 3.38439 21.3731 4.02573 22.191C4.5429 22.8475 5.15396 23.4242 5.83923 23.9027V23.8918L5.84898 23.9027C7.87481 25.2785 10.1227 25.1886 10.1227 25.1886C10.5116 25.1723 11.8149 25.1886 13.2947 24.4877C14.936 23.7098 15.8698 22.5518 15.8698 22.5518C16.4668 21.8596 16.9416 21.0709 17.2738 20.2193C17.653 19.2227 17.7786 18.0288 17.7786 17.5522V8.96242C17.8296 8.99275 18.5066 9.44017 18.5066 9.44017C18.5066 9.44017 19.4816 10.0653 21.0016 10.4715C22.0914 10.7608 23.5615 10.8225 23.5615 10.8225V6.66575C23.0469 6.72208 22.0015 6.55958 20.9301 6.02658L20.9311 6.0255Z" fill="white"></path>
-        </svg>
       </div>
     </div>
     <div class="footer__bottom container">
@@ -319,7 +309,7 @@
   </footer>
   <div class="btn-up is-hide">
     <svg class="btn-up__icon" width="32" height="32">
-      <use href="./images/icons/icons.svg#up-long-solid"></use>
+      <use href="./images/icons/icons.svg#circle-chevron-up-solid"></use>
     </svg>
   </div>
   <!-- підключаємо скрипти для роботи з зовнішніми бібліотеками-->

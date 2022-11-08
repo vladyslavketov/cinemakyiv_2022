@@ -38,7 +38,7 @@ function createlibProjectsMarkup(libProjects) {
         <li class="projects__item hide" data-filter="${category}">
           <img class="projects__img-cover js-coverPlay" src="./images/projects/cover/${category}/${projectName}.webp" alt="${projectName}" width="320" height="280"/>
           <svg class="projects__play-svg" width="60" height="60">
-            <use href="./images/icons/icons.svg#play_youtube"></use>
+            <use href="./images/icons/icons.svg#youtube-2"></use>
           </svg>
           <p class="project__title">${projectName}</p>
           <p class="project__category">${nameOfCategory}</p>
