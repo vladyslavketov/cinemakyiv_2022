@@ -26,6 +26,7 @@
 
     &:hover,
     &:focus {
+      border: transparent;
       background-color: var(--color__accent);
     };
   };

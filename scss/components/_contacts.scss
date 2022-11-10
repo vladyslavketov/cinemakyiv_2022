@@ -1,9 +1,9 @@
 .contacts {
   display: inline-flex;
   flex-direction: column;
-  max-width: 250px;
+  max-width: 200px;
 
-  font-size: 20px;
+  font-size: 16px;
 
   .mobile-menu & {
     padding: 20px 0;
@@ -45,7 +45,6 @@
     background-color: var(--color__accent);
 
     &.telegram {
-      // background-color: #229ED9;
       background-color: #0088cc;
     };
 
@@ -66,8 +65,8 @@
   fill: currentColor;
 
   .contacts__list--message &--message {
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
   };
 };
 

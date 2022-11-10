@@ -40,20 +40,20 @@
   border-radius: var(--border__radius);
 
   @media screen and (min-width:768px) and (max-width:1199px){
-    &:first-child {
+    &:nth-child(2) {
       grid-column-start: 1;
       grid-column-end: 3;
     };
 
-    &:last-child {
-      grid-column-start: 1;
-      grid-column-end: 3;
+    &:nth-child(1),
+    &:nth-child(3) {
+      order: -1;
     };
   };
 
   @media screen and (min-width:1200px) {
-    &:first-child {
-      grid-column-start: 1;
+    &:nth-child(2) {
+      grid-column-start: 2;
       grid-column-end: 4;
     };
   };
@@ -71,9 +71,9 @@
 };
 
 .benefits__desc {
-  padding: 28px;
+  padding: 4px;
 };
 
 .benefits__label {
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 };
